@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Максим Бердников](https://up.htmlacademy.ru/htmlcss/20/user/207597).
-* Наставник: `Неизвестно`.
+* Наставник: [Роман Коробейников](https://htmlacademy.ru/profile/rkorobeynikov).
 
 ---
 
