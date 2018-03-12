@@ -100,10 +100,31 @@
   			<h2 class="visually-hidden">Поиск</h2>
   			<h3>Заинтересовались</h3>
   			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="form-title">
+          Поиск гостиниц в Седоне
+        </p>
+        <form class="map-form" action="sedona-hotels.html">
+          <p class="map-item">
+            <label for="map-date-arrival">Дата заезда:</label>
+            <input id="map-date-arrival" type="text" name="date-arrival" value="" placeholder="24 апреля 2017">
+          </p>
+          <p class="map-item">
+            <label for="map-date-exit">Дата выезда:</label>
+            <input id="map-date-exit" type="text" name="date-exit" value="" placeholder="4 июля 2017">
+          </p>
+          <p class="map-item">
+            <label for="map-grown">Взрослые:</label>
+            <input id="map-grown" type=text"" name="grown" placeholder="2">
+          </p>
+          <p class="map-item">
+            <label for="map-children">Дети:</label>
+            <input id="map-children" type="text" name="children" placeholder="0">
+          </p>
+          <button class="map-button" type="submit">Найти</button>
+        </form>
   			<figure>
   				<img src="img/map.png" width="1718" height="748" alt="Карта">
   			</figure>
-  			<!-- Форма поиска и карта -->
   		</section>
   	</main>
 
