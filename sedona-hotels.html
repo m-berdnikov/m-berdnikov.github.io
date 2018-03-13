@@ -25,7 +25,50 @@
         <figure>
           <img src="img/filter-background.png" width="1200" height="800" alt="Nature">
         </figure>
-        <!-- Форма -->
+        <form class="form-filtres" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="infrastructure">
+            <legend>Инфраструктура</legend>
+            <ul>
+              <li>
+                <input id="pool-box" type="checkbox" name="pool" checked>
+                <label for="pool-box">Бассейн</label>
+              </li>
+              <li>
+                <input id="parking-box" type="checkbox" name="parking">
+                <label for="parking-box">Парковка</label>
+              </li>
+              <li>
+                <input id="wi-fi-box" type="checkbox" name="wi-fi">
+                <label for="wi-fi-box">Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="house-type">
+            <legend>Тип жилья</legend>
+            <ul>
+              <li>
+                <input id="hotel-box" type="checkbox" name="hotel" checked>
+                <label for="hotel-box">Гостиница</label>
+              </li>
+              <li>
+                <input id="motel-box" type="checkbox" name="motel" checked>
+                <label for="motel-box">Мотель</label>
+              </li>
+              <li>
+                <input id="apartments-box" type="checkbox" name="apartments" checked>
+                <label for="apartments-box">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="price-filtre">
+            <legend>Стоимость в сутки (р):</legend>
+            <div class="price-select">
+              <p class="price-min">От 0</p>
+              <p class="price-max">До 3000</p>
+            </div>
+            <button class="price-button" type="submit">Найти</button>
+          </fieldset>
+        </form>
       </section>
       <section class="search-header">
         <h2 class="visually-hidden">Навигация поиска</h2>
