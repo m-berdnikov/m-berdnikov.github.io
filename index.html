@@ -101,7 +101,7 @@
   			<h3>Заинтересовались</h3>
   			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a href="sedona-hotels.html" class="form-title">Поиск гостиниц в Седоне</a>
-        <form class="map-form" action="echo.htmlacademy.ru" method="get">
+        <form class="map-form" action="https://echo.htmlacademy.ru" method="get">
           <p class="map-item">
             <label for="map-date-arrival">Дата заезда:</label>
             <input id="map-date-arrival" type="text" name="date-arrival" value="" placeholder="24 апреля 2017">
@@ -112,17 +112,17 @@
           </p>
           <p class="map-item">
             <label for="map-grown">Взрослые:</label>
-            <button type="button">-</button>
-            <input id="map-grown" type=text"" name="grown" placeholder="2">
-            <button type="button">-</button>
+            <button class="button-minus" type="button">-</button>
+            <input id="map-grown" type="text" name="grown" placeholder="2">
+            <button class="button-plus" type="button">+</button>
           </p>
           <p class="map-item">
             <label for="map-children">Дети:</label>
-            <button type="button">-</button>
+            <button class="button-minus" type="button">-</button>
             <input id="map-children" type="text" name="children" placeholder="0">
-            <button type="button">+</button>
+            <button class="button-plus" type="button">+</button>
           </p>
-          <button class="map-button" type="submit">Найти</button>
+          <button class="button map-button" type="submit">Найти</button>
         </form>
   			<figure>
   				<img src="img/map.png" width="1200" height="473" alt="Карта">
