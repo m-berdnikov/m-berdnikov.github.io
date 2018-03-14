@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Седона. Главная</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   	<header class="main-header">
@@ -14,7 +17,7 @@
   				<li><a href="info.html">Информация</a></li>
   				<li><a href="gallery.html">Фото и видео</a></li>
   				<li><a href="map.html">Карта штата</a></li>
-  				<li><a href="hotels.html">Гостиницы</a></li>
+  				<li><a href="sedona-hotels.html">Гостиницы</a></li>
   			</ul>
   		</nav>
   	</header>
@@ -27,7 +30,7 @@
   			<p class="intro-city">Sedona</p>
   			<p class="intro-cause">"Because the Grand Canyon sucks!"</p>
   			<figure>
-  				<img src="img/background.png" width="1200" height="800" alt="Nature">
+  				  <img src="img/background.png" width="1200" height="508" alt="Nature">
   			</figure>
   		</section>
   		<section class="about-city">
@@ -35,19 +38,21 @@
   			<h3>Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
   			<p>Рассмотрим 5 причин, по которым Аризона круче, чем Гранд Каньон</p>  			
   		</section>
-  		<section class="cause-one">
-  			<h2 class="visually-hidden">Первая причина</h2>
-  			<h3>Настоящий городок</h3>
-  			<p>-№1-</p>
-  			<p>Седона - не аттракцион для туристов, там течет своя жизнь</p> 		
-  		</section>
-  		<section class="photo-one">
-        <h2 class="visually-hidden">Фото города</h2>
-  			<figure class="photo-one-content">
-  				<img src="img/city2.png" width="800" height="401" alt="Город">
-  			</figure>  			
-  		</section>
-  		<section>
+      <div class="cause-one-container">
+    		<section class="cause-one">
+    			<h2 class="visually-hidden">Первая причина</h2>
+    			<h3>Настоящий городок</h3>
+    			<p>-№1-</p>
+    			<p>Седона - не аттракцион для туристов, там течет своя жизнь</p> 		
+    		</section>
+    		<section class="photo-one">
+          <h2 class="visually-hidden">Фото города</h2>
+    			<figure class="photo-one-content">
+    				<img src="img/city2.png" width="800" height="401" alt="Город">
+    			</figure>  			
+    		</section>
+      </div>
+  		<section class="feature">
   			<h2 class="visually-hidden">Особенности</h2>
   			<ul class="feature-list">
   				<li class="feature-item">
@@ -64,19 +69,21 @@
   				</li>
   			</ul>
   		</section>
-  		<section class="photo-two">
-        <h2 class="visually-hidden">Фото ущелья</h2>
-  			<figure class="photo-two-content">
-  				<img src="img/canyon2.png" width="800" height="400" alt="Ущелье">
-  			</figure>  
-  		</section>
-  		<section class="cause-two">
-  			<h2 class="visually-hidden">Вторая причина</h2>
-  			<h3>Там есть мост дьявола</h3>
-  			<p>-№2-</p>
-  			<p>Да, по нему можно пройтись! Если конечно вы осмелитесь</p>
-  		</section>
-  		<section >
+      <div class="cause-two-container">
+    		<section class="photo-two">
+          <h2 class="visually-hidden">Фото ущелья</h2>
+    			<figure class="photo-two-content">
+    				<img src="img/canyon2.png" width="800" height="400" alt="Ущелье">
+    			</figure>  
+    		</section>
+    		<section class="cause-two">
+    			<h2 class="visually-hidden">Вторая причина</h2>
+    			<h3>Там есть мост дьявола</h3>
+    			<p>-№2-</p>
+    			<p>Да, по нему можно пройтись! Если конечно вы осмелитесь</p>
+    		</section>
+      </div>
+  		<section class="attraction">
   			<h2 class="visually-hidden">Достопримечательности</h2>
   			<ul class="attraction-list">
   				<li class="attraction-item">
@@ -99,35 +106,35 @@
   		<section class="search">
   			<h2 class="visually-hidden">Поиск</h2>
   			<h3>Заинтересовались</h3>
-  			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+  			<p class="search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button type="button" class="button form-title-button">Поиск гостиниц в Седоне</button>
         <form class="map-form" action="https://echo.htmlacademy.ru" method="get">
           <p class="map-item">
             <label for="map-date-arrival">Дата заезда:</label>
             <input id="map-date-arrival" type="text" name="date-arrival" value="" placeholder="24 апреля 2017">
-            <button type="button" class="button calendar-button"></button>
+            <button class="calendar-button" type="button"></button>
           </p>
           <p class="map-item">
             <label for="map-date-exit">Дата выезда:</label>
             <input id="map-date-exit" type="text" name="date-exit" value="" placeholder="4 июля 2017">
-            <button type="button" class="button calendar-button"></button>
+            <button class="calendar-button" type="button"></button>
           </p>
           <p class="map-item">
             <label for="map-grown">Взрослые:</label>
-            <button class="button-minus" type="button">-</button>
+            <button class="count-button button-minus" type="button">-</button>
             <input id="map-grown" type="text" name="grown" placeholder="2">
-            <button class="button-plus" type="button">+</button>
+            <button class="count-button button-plus" type="button">+</button>
           </p>
           <p class="map-item">
             <label for="map-children">Дети:</label>
-            <button class="button-minus" type="button">-</button>
+            <button class="count-button button-minus" type="button">-</button>
             <input id="map-children" type="text" name="children" placeholder="0">
-            <button class="button-plus" type="button">+</button>
+            <button class="count-button button-plus" type="button">+</button>
           </p>
           <button class="button map-button" type="submit">Найти</button>
         </form>
   			<figure>
-  				<img src="img/map.png" width="1200" height="473" alt="Карта">
+  				<img src="img/map.png" width="1200" height="594" alt="Карта">
   			</figure>
   		</section>
   	</main>
@@ -135,13 +142,13 @@
   	<footer class="main-footer">
   		<b class="footer-hashtag">#VISITSEDONA</b>
   		<div class="footer-social">
-  			<ul>
+  			<ul class="social-list">
   				<li class="social-button"><a href="#">Twitter</a></li>
   				<li class="social-button"><a href="#">Facebook</a></li>
   				<li class="social-button"><a href="#">YouTube</a></li>
   			</ul>
   		</div>
-  		<p>Website by <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy"></a></p>
+  		<p class="ha-logo">Website by <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy"></a></p>
   	</footer>
   </body>
 </html>

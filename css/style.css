@@ -1,0 +1,201 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "PT Sans", Arial, san-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #494949;
+	text-transform: uppercase;
+	background-color: #ffffff;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*
+.visually-hidden { 
+    position: absolute !important;
+    height: 1px; width: 1px; 
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); 
+    clip: rect(1px, 1px, 1px, 1px);
+}
+*/
+
+.main-navigation {
+	font-weight: 700;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.site-navigation {
+	list-style: none;
+}
+
+.site-navigation a {
+	color: #000000;
+}
+
+.site-navigation a:hover {
+	color: #a8c9df;
+}
+
+.site-navigation a:focus {
+	color: #ebebeb;
+}
+
+.site-navigation a:active {
+	color: #cfcac7;
+}
+
+/*Стилизация изображения в шапке*/
+
+.about-city h3 {
+	font-size: 21px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.cause-one,
+.cause-two {
+	color: #ffffff;
+	background-color: #81b3d2;
+	line-height: 21px;
+}
+
+.cause-one h3
+.cause-two h3 {
+	font-size: 21px;
+	font-weight: 700;
+}
+
+.feature-list {
+	list-style: none;
+	line-height: 21px;
+}
+
+.feature-list h3 {
+	font-size: 21px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.attraction-list {
+	list-style: none;
+	line-height: 21px;
+	background-color: #eeeeee;
+}
+
+.attraction-list h3 {
+	font-size: 21px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.search h3 {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 36px;
+	color: #000000;
+}
+
+.map-form {
+	font-weight: 700;
+	line-height: 26px;
+}
+
+.map-form input {
+	background-color: #f2f2f2;
+}
+
+.button {
+	font: inherit;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 26px;
+	vertical-align: middle;
+	border: none;
+	color: #ffffff;
+}
+
+.form-title-button {
+	background-color: #766357;
+
+}
+
+.form-title-button:hover {
+	background-color: #604e43;
+}
+
+.form-title-button:focus {
+	color: #928a85;
+	background-color: #503e33;
+}
+
+/*.calendar-button {
+	
+}*/
+
+.count-button {
+	background-color: #f2f2f2;
+}
+
+.calendar-button:hover,
+.count-button:hover {
+	background-color: #f2f2f2;
+}
+
+.calendar-button:focus,
+.count-button:focus {
+	background-color: #f2f2f2;
+}
+
+.map-button {
+	background-color: #81b3d2;
+}
+
+.map-button:hover {
+	background-color: #669ec0;
+}
+
+.map-button:focus {
+	color: #94b9d2;
+	background-color: #5496bd;
+}
+
+.main-footer {
+	background-color: #f9fbf6;
+	opacity: 0.9;
+}
+
+.social-list {
+	list-style: none;
+}
+
+/*.social-button {
+
+}*/
+
+.social-button:hover {
+	background-color: #669ec0;
+}
+
+.social-button:focus {
+	color: #94b9d2;
+	background-color: #5496bd;
+}
+
+.footer-hashtag {
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 26px;
+}
+
+.ha-logo {
+	font-size: 14px;
+	line-height: 26px;
+}
