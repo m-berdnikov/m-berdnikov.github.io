@@ -11,14 +11,18 @@
   	<header class="main-header">
   		<nav class="main-navigation">
         <a class="main-header-logo">
-          <img src="img/logo.png" width="138" height="70" alt="Логотип на глвной">
+          <img src="img/logo.png" alt="Логотип на глвной">
         </a>
-  			<ul class="site-navigation">
-  				<li><a href="info.html">Информация</a></li>
-  				<li><a href="gallery.html">Фото и видео</a></li>
-  				<li><a href="map.html">Карта штата</a></li>
-  				<li><a href="sedona-hotels.html">Гостиницы</a></li>
-  			</ul>
+        
+    			<ul class="site-navigation site-navigation-1">
+    				<li><a href="info.html">Информация</a></li>
+    				<li><a href="gallery.html">Фото и видео</a></li>
+          </ul>
+          <ul class="site-navigation site-navigation-2">
+    				<li><a href="map.html">Карта штата</a></li>
+    				<li><a href="sedona-hotels.html">Гостиницы</a></li>
+    			</ul>
+        
   		</nav>
   	</header>
   	<main class="container">
@@ -29,9 +33,9 @@
   			<p class="intro-place">to the gorgeous</p>
   			<p class="intro-city">Sedona</p>
   			<p class="intro-cause">"Because the Grand Canyon sucks!"</p>
-  			<figure>
+  			<!-- <figure>
   				  <img src="img/background.png" width="1200" height="508" alt="Nature">
-  			</figure>
+  			</figure> -->
   		</section>
   		<section class="about-city">
   			<h2 class="visually-hidden">О городе</h2>
@@ -104,9 +108,11 @@
   			</ul>
   		</section>
   		<section class="search">
-  			<h2 class="visually-hidden">Поиск</h2>
-  			<h3>Заинтересовались</h3>
-  			<p class="search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <div class="search-intro">
+    			<h2 class="visually-hidden">Поиск</h2>
+    			<h3>Заинтересовались</h3>
+    			<p class="search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        </div>
         <button type="button" class="button form-title-button">Поиск гостиниц в Седоне</button>
         <form class="map-form" action="https://echo.htmlacademy.ru" method="get">
           <p class="map-item">
@@ -139,15 +145,25 @@
   		</section>
   	</main>
   	<footer class="main-footer">
-  		<b class="footer-hashtag">#VISITSEDONA</b>
+      <div class="footer-hashtag-container">
+  		  <b class="footer-hashtag">#VISITSEDONA</b>
+      </div>
   		<div class="footer-social">
   			<ul class="social-list">
-  				<li class="social-button"><a href="#">Twitter</a></li>
-  				<li class="social-button"><a href="#">Facebook</a></li>
-  				<li class="social-button"><a href="#">YouTube</a></li>
+  				<li class="social-button">
+            <a href="#"><span class="visually-hidden">Twitter</span></a>
+          </li>
+  				<li class="social-button">
+            <a href="#"><span class="visually-hidden">Facebook</span></a>
+          </li>
+  				<li class="social-button">
+            <a href="#"><span class="visually-hidden">YouTube</span></a>
+          </li>
   			</ul>
   		</div>
-  		<p class="ha-logo"><span class="ha-label">Website by</span> <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy"></a></p>
+      <div class="ha-logo-container">
+  		  <p class="ha-logo"><span class="ha-label">Website by</span> <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy"></a></p>
+      </div>
   	</footer>
   </body>
 </html>
