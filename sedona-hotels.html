@@ -7,20 +7,23 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
   	<header class="main-header">
-  		<nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/logo.png" width="138" height="70" alt="Логотип на глвной">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/logo.png" alt="Логотип на глвной">
         </a>
-  			<ul class="site-navigation">
-  				<li><a href="info.html">Информация</a></li>
-  				<li><a href="gallery.html">Фото и видео</a></li>
-  				<li><a href="map.html">Карта штата</a></li>
-  				<li class="site-navigation-current"><a>Гостиницы</a></li>
-  			</ul>
-  		</nav>
-  	</header>
+        
+          <ul class="site-navigation site-navigation-1">
+            <li><a href="info.html">Информация</a></li>
+            <li><a href="gallery.html">Фото и видео</a></li>
+          </ul>
+          <ul class="site-navigation site-navigation-2">
+            <li><a href="map.html">Карта штата</a></li>
+            <li><a href="sedona-hotels.html">Гостиницы</a></li>
+          </ul>
+      </nav>
+    </header>
   	<main class="container">
       <h1 class="visually-hidden">Гостиницы</h1>
       <section class="filtres">
@@ -31,7 +34,7 @@
         <form class="form-filtres" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="infrastructure">
             <legend>Инфраструктура</legend>
-            <ul>
+            <ul class="infrastructure-list">
               <li>
                 <input id="pool-box" type="checkbox" name="pool" checked>
                 <label for="pool-box">Бассейн</label>
@@ -48,7 +51,7 @@
           </fieldset>
           <fieldset class="house-type">
             <legend>Тип жилья</legend>
-            <ul>
+            <ul class="house-type-list">
               <li>
                 <input id="hotel-box" type="checkbox" name="hotel" checked>
                 <label for="hotel-box">Гостиница</label>
@@ -157,15 +160,25 @@
       </section>
     </main>
   	<footer class="main-footer">
-  		<b class="footer-hashtag">#VISITSEDONA</b>
-  		<div class="footer-social">
-  			<ul class="social-list">
-  				<li class="social-button"><a href="#">Twitter</a></li>
-  				<li class="social-button"><a href="#">Facebook</a></li>
-  				<li class="social-button"><a href="#">YouTube</a></li>
-  			</ul>
-  		</div>
-  		<p class="ha-logo"><span class="ha-label">Website by</span><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy"></a></p>
-  	</footer>
+      <div class="footer-hashtag-container">
+        <b class="footer-hashtag">#VISITSEDONA</b>
+      </div>
+      <div class="footer-social">
+        <ul class="social-list">
+          <li class="social-button">
+            <a href="#"><span class="visually-hidden">Twitter</span></a>
+          </li>
+          <li class="social-button">
+            <a href="#"><span class="visually-hidden">Facebook</span></a>
+          </li>
+          <li class="social-button">
+            <a href="#"><span class="visually-hidden">YouTube</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="ha-logo-container">
+        <p class="ha-logo"><span class="ha-label">Website by</span> <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy"></a></p>
+      </div>
+    </footer>
   </body>
 </html>

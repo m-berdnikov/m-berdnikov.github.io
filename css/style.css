@@ -7,10 +7,18 @@ body {
 	font-weight: 400;
 	color: #494949;
 	text-transform: uppercase;
+	max-width: 1200px;
 	background-color: #ffffff;
 	text-align: center;
 	max-width: 1200px;
 }
+
+/*Временно для разметки*/
+
+/*.container {
+	background-color: #ffff14;
+}
+*/
 
 a {
 	text-decoration: none;
@@ -39,9 +47,9 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-.main-header {
-	margin-bottom: 62px;
-}
+/*.main-header {
+	margin-bottom: 0;
+}*/
 
 .main-header-logo {
 	width: 130px;
@@ -95,6 +103,7 @@ input[type="radio"].visually-hidden {
 	background-image: url('img/background.png') no-repeat;
 }
 .intro-welcome {
+	padding-top: 62px;
 	margin-bottom: 11px;
 }
 
@@ -216,7 +225,7 @@ figure {
 
 .search-intro {
 	padding-top: 50px;
-	padding-bottom: 135px;
+	padding-bottom: 45px;
 }
 
 .search h3 {
@@ -302,30 +311,39 @@ figure {
 
 .main-footer {
 	display: flex;
-	justify-content: space-between;
-	margin-top: -118px;
+	height: 120px;
+	margin-top: -120px;
 	padding-left: 135px;
 	padding-right: 100px;
-	padding-top: 35px;
-	padding-bottom: 35px;
 	background-color: #f9fbf6;
 	opacity: 0.9;
 }
 
 .footer-hashtag-container {
-
+padding: 0;
+	margin-right: 256px;
+	margin-top: 51px;
+	margin-bottom: 54px;
 }
 
 .footer-hashtag {
+	margin: 0 auto;
 	font-size: 21px;
 	font-weight: 700;
 	line-height: 26px;
+}
+
+.footer-social {
+	margin-right: 228px;
+	margin-top: 35px;
+	margin-bottom: 35px;
 }
 
 .social-list {
 	margin: 0;
 	padding: 0;
 	display: flex;
+	justify-content: space-between;
 	list-style: none;
 }
 
@@ -344,7 +362,11 @@ figure {
 	background-color: #5496bd;
 }
 
-
+.ha-logo-container {
+	margin-left: auto;
+	margin-top: 39px;
+	margin-bottom: 40px;
+}
 
 .ha-label {
 	font-size: 14px;
@@ -354,13 +376,27 @@ figure {
 /*Страница каталога*/
 
 .form-filtres {
+	margin: 0;
+	display: flex;
+	flex-direction: row; 
 	color: #ffffff;
 	background-color: #5585ad;
+}
+
+fieldset {
+	border: 0;
 }
 
 legend {
 	font-size: 16px;
 	font-weight: 700;
+}
+
+.infrastructure-list,
+.house-type-list {
+	/*margin: 0;
+ 	padding: 0;*/
+	list-style: none;
 }
 
 .price-select input {
@@ -375,19 +411,32 @@ legend {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
-	color: #ffffff;
+	color: #000000;
+}
+
+.search-header {
+	display: flex;
+	flex-direction: row;
+	height: 85px;
+	margin: auto 0;
 }
 
 .search-container {
+	display: flex;
+	flex-direction: row;
 	font-size: 12px;
 	line-height: 18px;
 	color: #000000;
+	margin: auto 0;
 }
 
 .search-navigation,
 .search-sort {
+	display: flex;
+	flex-direction: row;
 	list-style: none;
 }
+
 
 .search-navigation a {
 	color: #cacaca;
@@ -424,6 +473,13 @@ legend {
 	color: #cacaca;
 }
 
+.search-results {
+	display: flex;
+	border: 1px solid #e5e5e5;
+
+	padding: 30px 72px;
+}
+
 .search-results .button {
 	font-size: 14px;
 	line-height: 21px;
@@ -456,7 +512,15 @@ legend {
 }
 
 .rating {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	padding-right: 15px; 
 	color: #666666;
 	background-color: #f2f2f2;
+}
+
+.inner-page .main-footer {
+	margin-top: 0;
 }
 
