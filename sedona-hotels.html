@@ -32,59 +32,53 @@
           </figure> -->
           <form class="form-filtres" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="infrastructure">
-              <legend>Инфраструктура</legend>
+              <legend>Инфраструктура:</legend>
               <ul class="infrastructure-list">
                 <li>
-                  <input class="visually-hidden" id="pool-box" type="checkbox" name="pool" checked>
+                  <input class="visually-hidden form-filtres-checkbox" id="pool-box" type="checkbox" name="pool" checked>
                   <label for="pool-box">Бассейн</label>
                 </li>
                 <li>
-                  <input class="visually-hidden" id="parking-box" type="checkbox" name="parking">
+                  <input class="visually-hidden form-filtres-checkbox" id="parking-box" type="checkbox" name="parking">
                   <label for="parking-box">Парковка</label>
                 </li>
                 <li>
-                  <input class="visually-hidden" id="wi-fi-box" type="checkbox" name="wi-fi">
+                  <input class="visually-hidden form-filtres-checkbox" id="wi-fi-box" type="checkbox" name="wi-fi">
                   <label for="wi-fi-box">Wi-Fi</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="house-type">
-              <legend>Тип жилья</legend>
+              <legend>Тип жилья:</legend>
               <ul class="house-type-list">
                 <li>
-                  <input class="visually-hidden" id="hotel-box" type="checkbox" name="hotel" checked>
+                  <input class="visually-hidden form-filtres-checkbox" id="hotel-box" type="checkbox" name="hotel" checked>
                   <label for="hotel-box">Гостиница</label>
                 </li>
                 <li>
-                  <input class="visually-hidden" id="motel-box" type="checkbox" name="motel" checked>
+                  <input class="visually-hidden form-filtres-checkbox" id="motel-box" type="checkbox" name="motel" checked>
                   <label for="motel-box">Мотель</label>
                 </li>
                 <li>
-                  <input class="visually-hidden" id="apartments-box" type="checkbox" name="apartments" checked>
+                  <input class="visually-hidden form-filtres-checkbox" id="apartments-box" type="checkbox" name="apartments" checked>
                   <label for="apartments-box">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="price-filtre">
-              <legend>Стоимость в сутки (р):</legend>
+              <div class="price-filtre-title">Стоимость в сутки (р):</div>
               <div class="price-select">
-                <p class="price-min">
-                  <span class="price-select-label">От</span>
-                  <input type="number" name="price-min" value="0">
-                </p>
-                <p class="price-max">
-                  <span class="price-select-label">До</span>
-                  <input type="number" name="price-max" value="3000">
-                </p>
+                <label class="price-min"> От <input type="text" name="price-min" value="0"></label>
+                <label class="price-max"> До <input type="text" name="price-max" value="3000"></label>
               </div>
               <div class="price-range">
                 <div class="scale">
                   <div class="slider"></div>
                 </div>
-                <div class="switch-min"></div>
-                <div class="switch-max"></div>
+                <div class="range-switch range-switch-min"></div>
+                <div class="range-switch range-switch-max"></div>
                 </div>
-              <button class="price-button" type="submit">Найти</button>
+              <button class="price-button" type="submit">Показать</button>
             </fieldset>
           </form>
         </section>
@@ -102,10 +96,10 @@
             </ul>
             <ul class="search-sort">
               <li class="sort-item">
-                <a href="#"><img src="img/icon-up-dir.svg" alt="По возрастанию"></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a>
               </li>
-              <li class="sort-item">
-                <a href="#"><img src="img/icon-down-dir.svg" alt="По возрастанию"></a>
+              <li class="sort-item current-sort">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a>
               </li>              
             </ul>
           </div>
