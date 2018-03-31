@@ -498,6 +498,7 @@ figure {
 
 .map-block iframe {
 	width: 100%;
+	border: 0;
 }
 
 @keyframes bounce {
