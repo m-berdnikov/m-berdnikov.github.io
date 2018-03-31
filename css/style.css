@@ -608,12 +608,6 @@ figure {
 
 /*Страница каталога*/
 
-.inner-page {
-	/*margin-right: 6%;
-	margin-left: 6%;*/
-	/*overflow: hidden;*/
-}
-
 .filtres {
 	padding-right: 77px; 
 	padding-left: 73px;
@@ -705,9 +699,6 @@ legend {
 	font-size: 16px;
 	font-weight: 700;
 	margin-bottom: 11px;
-	/*padding: 0;
-	margin: 0;
-	text-align: left;*/
 }
 
 .price-select {
@@ -727,8 +718,6 @@ legend {
     width: 2px;
     height: 22px;
     background: #ffffff;
-    
-   /* transform: translate(-50%, -34%);*/
 }
 
 .price-select label {
