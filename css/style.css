@@ -78,7 +78,6 @@ input[type="radio"].visually-hidden {
 	width: 22%;
 }
 
-
 .media {
 	margin-right: 95px;
 }
@@ -113,13 +112,11 @@ input[type="radio"].visually-hidden {
 	background-image: url("../img/background.png");
 	background-size: cover; 
 	background-position: center 20%;
-
 }
 
 .intro-welcome {
 	margin: 0 auto;
-	padding-top: 79px;
-	padding-bottom: 1px;
+	padding-top: 76px;
 	margin-bottom: 11px;
 	width: 188px;
 	height: 45px;
@@ -148,7 +145,7 @@ input[type="radio"].visually-hidden {
 
 .intro-city {
 	margin: 0 auto;
-	margin-bottom: 53px;
+	margin-bottom: 56px;
 	width: 458px;
 	height: 78px;
 	background-image: url("../img/sedona.png");
@@ -156,7 +153,7 @@ input[type="radio"].visually-hidden {
 
 .intro-cause {
 	margin: 0 auto;
-	margin-bottom: 23px;
+	margin-bottom: 24px;
 	width: 296px;
 	height: 80px;
 	background-image: url("../img/because.png");
@@ -237,7 +234,7 @@ figure {
 
 .feature {
 	padding-top: 60px;
-	padding-bottom: 63px;
+	padding-bottom: 69px;
 }
 
 .feature-list {
@@ -310,6 +307,11 @@ figure {
 	margin-right: 65px; 
 }
 
+.svg-container {
+	width: 76px;
+	height: 76px;
+	margin: 0 auto;
+}
 .attraction-item h3 {
 	margin: auto;
 	width: 130px;
@@ -407,7 +409,6 @@ figure {
 	text-transform: uppercase;
 	padding-left: 10px;
 	padding-bottom: 3px;
-
 }
 
 .map-item-date-arrival input:hover,
@@ -420,7 +421,6 @@ figure {
 	background-color: #ffffff;
 	outline-color: #e5e5e5;
 }
-
 
 .map-item-date-arrival,
 .map-item-date-exit {
@@ -617,7 +617,6 @@ figure {
 	width: 46px;
 	height: 48px;
 	background-color: #81b3d2;
-	
 }
 
 .social-button:hover {
@@ -850,6 +849,7 @@ legend {
 	border: 2px solid #ffffff;
 	border-radius: 2px;
 	cursor: pointer;	
+	outline: none;
 }
 
 .search-header {
