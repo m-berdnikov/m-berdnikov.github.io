@@ -252,7 +252,7 @@ figure {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	margin: 0 49px;
+	margin: 0;
 	padding: 0;
 	list-style: none;
 }
@@ -266,12 +266,23 @@ figure {
 }
 
 .feature-item {
-	width: 33.3;
+	width: 33.3%;
 	height: auto;
+}
+
+.feature-item:nth-child(3) .svg-container {
+	margin-top: -5px;
+	margin-bottom: 1px;
+}
+
+.feature-item:nth-child(3) h3 {
+	margin-top: 29px;
 }
 
 .feature-item p {
 	max-width: 300px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .cause-two-container {
