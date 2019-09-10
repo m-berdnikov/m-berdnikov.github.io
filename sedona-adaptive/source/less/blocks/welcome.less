@@ -1,0 +1,124 @@
+.welcome {
+  max-width: 320px;
+  margin: 0 auto;
+  background: #d5e6f0 url("../img/bg-back-mobile@1x.jpg") center/cover no-repeat;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+
+  &--inner {
+    background-size: 753px;
+    background-position: center -227px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .welcome {
+    max-width: 768px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+
+    &--inner {
+      background-size: 766px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .welcome {
+    max-width: 1200px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+
+    &--inner {
+      background-size: 1200px;
+      background-position: center -215px;
+    }
+  }
+}
+
+.welcome__text {
+  margin: 0;
+  padding-top: 89px;
+  padding-bottom: 80px;
+  background: url("../img/bg-intro-triangle-mobile.svg") bottom/cover no-repeat;
+
+  &--inner {
+    padding-top: 51px;
+    padding-bottom: 62px;
+    background: url("../img/bg-intro-triangle-mobile.svg") bottom/cover no-repeat;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .welcome__text {
+    padding-top: 77px;
+    padding-bottom: 84px;
+    background: url("../img/bg-intro-triangle-tablet.svg") bottom/768px no-repeat;
+
+    &--inner {
+      padding-top: 94px;
+      padding-bottom: 110px;
+      background: url("../img/bg-intro-triangle-tablet.svg") bottom/768px no-repeat;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .welcome__text {
+    padding-top: 78px;
+    padding-bottom: 85px;
+    background: url("../img/bg-intro-triangle-desktop.svg") bottom/1200px no-repeat;
+
+    &--inner {
+      padding-top: 102px;
+      padding-bottom: 113px;
+      background: url("../img/bg-intro-triangle-desktop.svg") bottom/1200px no-repeat;
+    }
+  }
+}
+
+.welcome__text img {
+  width: 281px;
+  height: 214px;
+}
+
+@media (min-width: @tablet-width) {
+  .welcome__text img {
+    width: 460px;
+    height: 350px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .welcome__text img {
+    width: 460px;
+    height: 350px;
+  }
+}
+
+.welcome__text--inner img {
+  width: 229px;
+  height: 39px;
+}
+
+@media (min-width: @tablet-width) {
+  .welcome__text--inner img {
+    width: 460px;
+    height: 80px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .welcome__text--inner img {
+    width: 460px;
+    height: 79px;
+  }
+}

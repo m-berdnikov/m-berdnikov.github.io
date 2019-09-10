@@ -1,0 +1,33 @@
+.main-nav {
+  position: absolute;
+  visibility: hidden;
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: #ffffff;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+
+  &--no-js {
+    position: relative;
+    visibility: visible;
+  }
+
+  &--inactive {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  &--active {
+    visibility: visible;
+    position: relative;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    position: relative;
+    visibility: visible;
+    font-size: 14px;
+  }
+}

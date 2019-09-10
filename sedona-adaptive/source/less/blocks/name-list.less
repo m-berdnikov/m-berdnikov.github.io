@@ -1,0 +1,85 @@
+.name-list {
+  list-style: none;
+  text-align: left;
+}
+
+.name-list__item {
+  padding: 0 0 20px 17px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .name-list__item {
+    padding-bottom: 19px;
+  }
+}
+
+.name-list__item label {
+  padding-right: 13px;
+  color: #333333;
+}
+
+@media (min-width: @tablet-width) {
+  .name-list__item label {
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .name-list__item--patronymic label {
+    padding-right: 14px;
+  }
+}
+
+.name-list__item input[type="text"] {
+  padding: 20px 10px 19px 22px;
+}
+
+.name-list__item--name input[type="text"] {
+  padding: 18px 19px 19px 20px;
+  width: 190px;
+}
+
+@media (min-width: @tablet-width) {
+  .name-list__item--name input[type="text"] {
+    width: 177px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .name-list__item--name input[type="text"] {
+    width: 311px;
+  }
+}
+
+.name-list__item--surname input[type="text"] {
+  width: 160px;
+}
+
+@media (min-width: @tablet-width) {
+  .name-list__item--surname input[type="text"] {
+    width: 146px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .name-list__item--surname input[type="text"] {
+    width: 281px;
+  }
+}
+
+.name-list__item--patronymic input[type="text"] {
+  width: 163px;
+}
+
+@media (min-width: @tablet-width) {
+  .name-list__item--patronymic input[type="text"] {
+    width: 148px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .name-list__item--patronymic input[type="text"] {
+    width: 281px;
+  }
+}
